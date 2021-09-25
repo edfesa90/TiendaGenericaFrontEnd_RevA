@@ -5,13 +5,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="Estilos css/Estilos1.css">
-	<title>Tienda Generica G7</title>
+	<link rel="stylesheet" type="text/css" href="Estilos css/Estilos4.css">
+	<title>Usuarios</title>
 </head>
 <body>
+
 	<header>
         <div class="titulo">
-            <h1>Tienda Generica</h1>
+            <h1><a href="Tienda.jsp">Tienda Generica</a></h1>
         </div>
         <nav>
             <a href="usuarios.jsp" class="b">◦ Usuarios</a>
@@ -19,7 +20,7 @@
             <a href="proveedores.jsp" class="b">◦ Proveedores</a>
             <a href="productos.jsp" class="b">◦ Productos</a>
             <a href="ventas.jsp" class="b">◦ Ventas</a>
-            <a href="reportes.jsp" class="b">◦ Reportes</a>
+            <a href="#" class="b">◦ Reportes</a>
         </nav>
         <div class="logo"> 
             <img class="logo" src="Estilos css/Imagenes/Imagen1.jpg" alt="Lotipo prueba" />
@@ -28,7 +29,21 @@
 
 	<section class="main">
         <br />
-            <h2>Bienvenido a Tienda Generica Grupo 7</h2>
+        <h2>Reportes Tienda Generica</h2>
+        <br />
+        <form action="pruebaServlet" method="get">
+            <div>
+                <button name="Usuarios" class="acciones">Listado de Usuarios</button>
+                <br />
+                <button name="Clientes" class="acciones">Listado de Clientes</button>
+                <br />
+                <button name="Ventas" class="acciones">Ventas por Cliente</button>
+        </form>
+
+        </section>
     </section>
+
+    
+
 </body>
 </html>
